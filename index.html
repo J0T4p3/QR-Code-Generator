@@ -4,17 +4,29 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="qr icon" href="assets/qr-code.png" type="image/x-icon" />
 		<script src="script.js" defer></script>
-		<title>Criador de QR Code</title>
+		<title>QR Code Generator</title>
 	</head>
 	<body>
+		<head> </head>
 		<div class="qrbox">
-			<img src="" alt="Qr-code" />
+			<h1>QR Code Generator</h1>
+			<a
+				href="http://api.qrserver.com/v1/create-qr-code/?data=dfsdf&size=1000x1000 script.js:26:10
+"
+				download="Teste.png"
+				id="DownloadImage"
+			>
+				<img src="" alt="Qr-code" />
+			</a>
+
 			<textarea
 				name="link"
-				placeholder="Cole o link e depois clique no botão para ter o seu QR Code!"
+				placeholder="Paste or write the text in here and after press the button!"
 			></textarea>
-			<button>Gerar QR Code</button>
+			<button id="btnGenerate">Generate QR Code</button>
+			<button id="btnDownload">Download QR Code</button>
 		</div>
 	</body>
 </html>
