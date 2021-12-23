@@ -2,7 +2,6 @@ let qrcodelink = select('a');
 let qrcode = select('img');
 let qrtext = select('textarea');
 let qrbtn = select('#btnGenerate');
-let qrDownloadBtn = select('#btnDownload');
 
 //On page load, put a default qr code
 window.addEventListener('load', generateQR);
@@ -27,10 +26,8 @@ function generateQR() {
 
 	//set the href of image to be the image
 	document.getElementById('DownloadImage').href = qrcode.src;
+	document.getElementsByTagName('a').href = qrcode.src;
 }
-
-function downloadQR() {}
-
 function select(el) {
 	return document.querySelector(el);
 }
